@@ -471,10 +471,10 @@ display: flex;
   text-shadow: 2px 2px 4px black;
 }
 .po{
-   height: 50px;
+  height: 40px;
   width: 50px;
   position: absolute;
-  left: -50px;
+  left: -40px;
   top: -16px;
 }
 .ge {
