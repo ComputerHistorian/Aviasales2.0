@@ -446,9 +446,11 @@ display: flex;
   width: 85%; 
   
 }
-
-
-
+.n{
+  height: 30px;
+  width: 100%;
+  background-color: #007AFF;
+}
 .sup {
   flex-direction: row;
   display: flex;
@@ -456,10 +458,10 @@ display: flex;
   height: 100px;
   width: 100%;
   position: relative;
-  left: px;
+  left: 30px;
   top: 30px;
   bottom: 0;
-  background-color: #00BFFF;
+  background-color: #007AFF;
 }
 
 
@@ -474,7 +476,7 @@ display: flex;
   height: 40px;
   width: 50px;
   position: absolute;
-  left: -40px;
+  left: -30px;
   top: -16px;
 }
 .ge {
