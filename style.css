@@ -1,3 +1,6 @@
+body{
+  background-color: #F5F8FA;
+}
 .chat-message {
       display: flex;
       align-items: flex-start;
