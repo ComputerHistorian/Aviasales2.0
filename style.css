@@ -453,10 +453,9 @@ display: flex;
   position: absolute;
   left: px;
   top: -20px;
+  bottom: 0;
 }
 .ff{
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 .sup {
