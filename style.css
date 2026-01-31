@@ -438,7 +438,7 @@ display: flex;
 .ioi {
   position: relative;
   top: -20px;
-  
+  color: white;
 }
 .nav-flex {
   display: flex;
