@@ -48,7 +48,6 @@
 .title {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
   letter-spacing: 0.3px;
 
   text-shadow:
@@ -93,12 +92,10 @@
   top: 14px;
   right: 14px;
   padding: 6px 14px;
-
   background: linear-gradient(135deg, #ffd700, #ff9f00);
   color: #111;
   font-weight: 700;
   font-size: 13px;
-
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 200, 0, 0.7);
 }

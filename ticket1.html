@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Купить Билет - Село Молочное</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Open Sans', sans-serif;
+      background:
+        radial-gradient(circle at top, #1b1f3b, #0a0c1a);
+      color: #fff;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 16px 60px;
+    }
+
+    /* Video */
+    .video-box {
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow:
+        0 0 40px rgba(0, 122, 255, 0.45);
+      margin-bottom: 30px;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Glass card */
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+
+      border-radius: 22px;
+      padding: 26px;
+
+      box-shadow:
+        0 0 35px rgba(0, 122, 255, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    /* Info grid */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .info-item {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 6px;
+    }
+
+    .info-item strong {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* Price */
+    .price-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: 700;
+      color: #00d4ff;
+      text-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
+    }
+
+    .buy-btn {
+      padding: 14px 28px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #007aff, #00d4ff);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+
+      box-shadow: 0 0 25px rgba(0, 122, 255, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(0, 212, 255, 0.9);
+    }
+
+    /* VIP badge */
+    .vip {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      background: linear-gradient(135deg, #ffd700, #ff9f00);
+      box-shadow: 0 0 15px rgba(255, 200, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Video -->
+    <div class="video-box">
+      <video src="video.mp4" autoplay muted loop playsinline></video>
+    </div>
+
+    <!-- Main card -->
+    <div class="card">
+      <div class="vip">VIP</div>
+
+      <h1 class="title">Село Молочное</h1>
+      <div class="subtitle">Авиабилет • Прямой рейс • Комфорт+ • Дорогой билет</div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span>Вылет</span>
+          <strong>31 февраля 2025 года</strong>
+        </div>
+
+        <div class="info-item">
+          <span>Прилет</span>
+          <strong>???</strong>
+        </div>
+
+        <div class="info-item">
+          <span>Авиакомпания</span>
+          <strong>Авиасейлс</strong>
+        </div>
+
+        <div class="info-item">
+          <span>Место</span>
+          <strong>???</strong>
+        </div>
+      </div>
+
+      <div class="price-box">
+        <div class="price">5₽</div>
+        <button class="buy-btn">Купить билет</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
