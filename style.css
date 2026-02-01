@@ -1,6 +1,7 @@
 .header {
   position: sticky;
-  top: 14px;
+  top: clamp(8px, 3vw, 16px);
+
   z-index: 100;
 
   margin: 0 auto;
@@ -86,6 +87,12 @@
     inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
+.cards {
+  display: flex;              /* ставит в строку */
+  justify-content: center;    /* по центру */
+  gap: 20px;                  /* расстояние между карточками */
+  flex-wrap: wrap;            /* 🔥 ОЧЕНЬ ВАЖНО: перенос на новую строку */
+}
 /* VIP badge */
 .badge {
   position: absolute;
