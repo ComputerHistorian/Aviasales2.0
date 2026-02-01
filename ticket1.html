@@ -29,13 +29,15 @@
     }
 
     /* Video */
-    .video-box {
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow:
-        0 0 40px rgba(0, 122, 255, 0.45);
-      margin-bottom: 30px;
-    }
+ .video-box {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 122, 255, 0.45);
+  margin-bottom: 30px;
+
+  /* Максимальная ширина видео */
+  max-width: 100%;
+}
 
     .video-box video {
       width: 100%;
@@ -144,34 +146,49 @@
       background: linear-gradient(135deg, #ffd700, #ff9f00);
       box-shadow: 0 0 15px rgba(255, 200, 0, 0.7);
     }
+    .video-wrapper {
+  position: relative;
+  width: 100%;
+  /* Соотношение 16:9 */
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
   </style>
 </head>
 <body>
 
   <div class="page">
 
-    <!-- Video -->
-    <div class="video-box">
-      <iframe
-        src="https://www.youtube.com/embed/5dgrBdIUpPM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-        allowfullscreen>
-      </iframe> 
-    </div>
-
+  <div class="video-box">
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/5dgrBdIUpPM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
     <!-- Main card -->
     <div class="card">
       <div class="vip">не VIP</div>
 
       <h1 class="title">Село Молочное</h1>
-      <div class="subtitle">Авиабилет • Прямой рейс • Комфорт+ • Дорогой билет и скорее ваш последний 🥰</div>
+      <div class="subtitle">Авиабилет • Прямой рейс • Комфорт+ • Дорогой билет и скорее ваш последний🥰</div>
 
       <div class="info-grid">
         <div class="info-item">
           <span>Вылет</span>
-          <strong>31 февраля 2025 года</strong>
+          <strong>30 февраля 2026 года</strong>
         </div>
 
         <div class="info-item">
